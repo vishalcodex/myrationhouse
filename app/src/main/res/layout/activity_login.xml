@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/white"
     android:focusableInTouchMode="true">
 
     <androidx.appcompat.widget.Toolbar
@@ -24,7 +24,8 @@
         android:layout_height="170dp"
         android:layout_below="@id/toolbar"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_login" />
+        android:visibility="gone"
+        android:src="@drawable/scblogo" />
 
     <!--Login lyt-->
     <ScrollView
@@ -64,7 +65,7 @@
                     android:drawableStart="@drawable/ic_phone"
                     android:drawablePadding="@dimen/dimen_10dp"
                     android:hint="@string/mobile"
-                    android:importantForAutofill="yes"
+                    android:importantForAutofill="no"
                     android:inputType="phone|number"
                     android:padding="@dimen/dimen_7dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small" />
@@ -184,6 +185,17 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:textColor="@color/black" />
 
+            <TextView
+                android:id="@+id/tvTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/verify_your_mobile"
+                android:visibility="gone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -247,7 +259,7 @@
                 android:orientation="vertical"
                 android:visibility="gone">
 
-                <wrteam.ekart.shop.ui.PinView
+                <com.codex.myrationhouse.ui.PinView
                     android:id="@+id/pinViewOTP"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

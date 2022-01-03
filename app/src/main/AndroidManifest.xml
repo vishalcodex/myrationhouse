@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="wrteam.ekart.shop">
+    package="com.codex.myrationhouse">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -23,8 +23,10 @@
         android:name="android.permission.WRITE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
 
+
+
     <application
-        android:name=".helper.ApiConfig"
+        android:name="com.codex.myrationhouse.helper.ApiConfig"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
@@ -35,12 +37,15 @@
         tools:replace="android:usesCleartextTraffic,android:allowBackup"
         tools:targetApi="m">
 
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
         <activity
-            android:name=".activity.WelcomeActivity"
+            android:name="com.codex.myrationhouse.activity.WelcomeActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".activity.PayStackActivity"
+            android:name="com.codex.myrationhouse.activity.PayStackActivity"
             android:screenOrientation="portrait" />
 
         <uses-library
@@ -61,16 +66,16 @@
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.codex.myrationhouse.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.DrawerActivity"
+            android:name="com.codex.myrationhouse.activity.DrawerActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.codex.myrationhouse.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.codex.myrationhouse.activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,7 +89,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="webekart.wrteam.in"
+                    android:host="myrationhouse.codextechnologies.co.in"
                     android:pathPrefix="/refer"
                     android:scheme="https" />
             </intent-filter>
@@ -95,24 +100,24 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="webekart.wrteam.in"
+                    android:host="myrationhouse.codextechnologies.co.in"
                     android:pathPrefix="/itemdetail"
                     android:scheme="https" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name=".activity.PayPalWebActivity"
+            android:name="com.codex.myrationhouse.activity.PayPalWebActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.MidtransActivity"
+            android:name="com.codex.myrationhouse.activity.MidtransActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.StripeActivity"
+            android:name="com.codex.myrationhouse.activity.StripeActivity"
             android:screenOrientation="portrait" />
 
         <service
-            android:name=".helper.MyFirebaseMessagingService"
+            android:name="com.codex.myrationhouse.helper.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -130,7 +135,7 @@
         </provider>
 
         <service
-            android:name=".helper.MyFirebaseMessagingService"
+            android:name="com.codex.myrationhouse.helper.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

@@ -26,16 +26,16 @@
             android:id="@+id/menu_tracker"
             android:icon="@drawable/ic_menu_tracker"
             android:title="@string/your_orders" />
-        <item
-            android:id="@+id/menu_wallet_history"
-            android:icon="@drawable/ic_wallet"
-            android:title="@string/wallet_history"
-            app:actionLayout="@layout/menu_counter_layout" />
-        <item
-            android:id="@+id/menu_transaction_history"
-            android:icon="@drawable/ic_transaction_history"
-            android:title="@string/transaction_history"
-            app:actionLayout="@layout/menu_counter_layout" />
+<!--        <item-->
+<!--            android:id="@+id/menu_wallet_history"-->
+<!--            android:icon="@drawable/ic_wallet"-->
+<!--            android:title="@string/wallet_history"-->
+<!--            app:actionLayout="@layout/menu_counter_layout" />-->
+<!--        <item-->
+<!--            android:id="@+id/menu_transaction_history"-->
+<!--            android:icon="@drawable/ic_transaction_history"-->
+<!--            android:title="@string/transaction_history"-->
+<!--            app:actionLayout="@layout/menu_counter_layout" />-->
     </group>
 
     <group

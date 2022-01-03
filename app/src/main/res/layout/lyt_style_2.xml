@@ -21,9 +21,9 @@
             android:id="@+id/imgStyle2_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_above="@id/tvStyle2_1"
-            android:src="@drawable/placeholder" />
+            android:layout_alignParentTop="true"
+            android:src="@drawable/splash" />
 
         <TextView
             android:id="@+id/tvStyle2_1"
@@ -73,9 +73,9 @@
                 android:id="@+id/imgStyle2_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
                 android:layout_above="@id/tvStyle2_2"
-                android:src="@drawable/placeholder" />
+                android:layout_alignParentTop="true"
+                android:src="@drawable/splash" />
 
             <TextView
                 android:id="@+id/tvStyle2_2"
@@ -114,9 +114,9 @@
                 android:id="@+id/imgStyle2_3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
                 android:layout_above="@id/tvStyle2_3"
-                android:src="@drawable/placeholder" />
+                android:layout_alignParentTop="true"
+                android:src="@drawable/splash" />
 
             <TextView
                 android:id="@+id/tvStyle2_3"
